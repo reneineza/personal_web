@@ -1,0 +1,48 @@
+ 
+
+/* Add your custom styles here */
+body {
+    padding-top: 56px; /* Adjusted for the fixed navbar */
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}  body {
+    position: relative; /* Set position to relative to make ::before and ::after relative to the body */
+    background-image: url('images/background2.jpg'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Fixed background */
+    margin: 0; /* Remove default body margin */
+
+    /* Add additional styles as needed */
+    color: #ffffff; /* Set text color to white on top of the background */
+}
+
+.navbar {
+    position: fixed; /* Fixed position */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Set a higher z-index to bring the navbar to the front */
+    background-color: transparent !important; /* Make the background transparent */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* White text color */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* White color for the navbar toggler icon */
+}
+/* Add styles for the element you want to interact with */
+.enlarge-on-hover {
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+/* Define the enlarged size when hovered over */
+.enlarge-on-hover:hover {
+    transform: scale(1.1); /* Enlarge the element by 10% */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
