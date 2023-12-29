@@ -25,3 +25,19 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         alert('An error occurred. Please try again later.');
     });
 });
+// Function to load the footer 
+function loadFooter() {
+    // Fetch the content of footer.html
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insert the footer content with the new class at the end of the body
+            document.body.insertAdjacentHTML('beforeend', `<div class="footer-container">${data}</div>`);
+        })
+        .catch(error => {
+            console.error('Error loading footer:', error);
+        });
+}
+
+// Call the function to load the footer
+loadFooter();
