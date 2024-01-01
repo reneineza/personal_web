@@ -2,7 +2,7 @@
 
 Welcome to the GitHub repository for my personal website! This website serves as a portfolio and a showcase of my skills, projects, and experiences. Feel free to explore the code and content to learn more about me.
 
-## Home
+## About
 
 This personal website is designed to reflect my personality, skills, and achievements. It includes sections such as:
 
